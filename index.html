@@ -69,7 +69,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="colorlib-navbar-brand">
-                  <a class="colorlib-logo" href="index.html">
+                  <a class="colorlib-logo">
                     <span
                       class="logo-img"
                       style="background-image: url(images/avatar1.png);"
@@ -118,9 +118,8 @@
                   <h1
                     class="mb-3"
                     data-scrollax="properties: {translateY: '30%', opacity: 1.6}"
-                  >
-                    FullStack Developer
-                  </h1>
+                    id="titleProf"
+                  >Software Engineer</h1>
                 </div>
               </div>
             </div>
@@ -134,11 +133,8 @@
                 <div class="about-desc">
                   <h1 class="bold-text">About</h1>
                   <div class="p-5">
-                    <h2 class="mb-5">Olá! Eu sou Moreno Laforet</h2>
-                    <p>
-                      Sou fullstack developer. Já atuei em vários projetos para
-                      empresas de grande porte. Como:
-                    </p>
+                    <h2 class="mb-5" id="aboutTitle"></h2>
+                    <p id="aboutDescription"></p>
                     <ul class="company list-unstyled mt-4">
                       <li>
                         <a target="_blank" href="https://www.hugeinc.com/">
@@ -166,7 +162,7 @@
                         </a>
                       </li>
                     </ul>
-                    <p>Confira minhas redes sociais</p>
+                    <p id="socialMidiasTitle"></p>
                     <ul class="ftco-footer-social list-unstyled mt-4">
                       <li>
                         <a
@@ -197,14 +193,14 @@
                         ></a>
                       </li>
                     </ul>
-                    <h5>Entre em contato comigo!</h5>
+                    <h5 id="contactTitleAbout"></h5>
                     <ul class="company list-unstyled mt-4">
                       <li>
                         Email:
                         <a style="display: inline-block" href="mailto:laforetmoreno@gmail.com">laforetmoreno@gmail.com</a>
                       </li>
                       <li>
-                        Telefone:
+                        <span id="phone"></span>
                         <a style="display: inline-block" href="tel:+5521994156023">21 99415-6023</a>
                       </li>
                     </ul>
@@ -277,9 +273,37 @@
                 data-scrollax-parent="true"
               >
                 <a
-                  href="https://www.gotilt.com.br/"
-                  class="image d-flex justify-content-center align-items-center"
+                  href="https://flieber.com/"
+                  class="image order-2 d-flex justify-content-center align-items-center"
                   style="background-image: url('images/flieber.png');"
+                  data-scrollax=" properties: { translateY: '-30%'}"
+                >
+                  <div
+                    class="icon d-flex text-center justify-content-center align-items-center"
+                  >
+                    <span class="icon-search"></span>
+                  </div>
+                </a>
+                <div class="text order-1">
+                  <h4 class="subheading">
+                      <a href="https://flieber.com/">
+                        Flieber
+                      </a>
+                  </h4>
+                  <h2 class="heading">
+                    <a href="https://flieber.com/">RIGHT PRODUCT. RIGHT PLACE. RIGHT TIME.</a>
+                  </h2>
+                  <p id="flieberDescription"></p>
+                </div>
+              </div>
+              <div
+                  class="block-3 d-md-flex ftco-animate"
+                  data-scrollax-parent="true"
+                >
+                <a
+                  href="https://www.hugeinc.com/"
+                  class="image d-flex justify-content-center align-items-center"
+                  style="background-image: url('images/huge.jpg');"
                   data-scrollax=" properties: { translateY: '-30%'}"
                   >
                   <div class="icon d-flex text-center justify-content-center align-items-center">
@@ -288,18 +312,16 @@
                 </a>
                 <div class="text">
                   <h4 class="subheading">
-                    <a href="https://flieber.com/">
-                      Flieber
+                    <a href="https://www.hugeinc.com/">
+                      HUGE
                     </a>
                   </h4>
                   <h2 class="heading">
-                    <a href="https://flieber.com/">
-                      RIGHT PRODUCT. RIGHT PLACE. RIGHT TIME.
+                    <a href="https://www.hugeinc.com/">
+                      HUGE
                     </a>
                   </h2>
-                  <p>
-                    Startup americana que esta revolucionando o mercado de retail nos USA e Europa.
-                  </p>
+                  <p id="hugeDescription"></p>
                 </div>
               </div>
               <div
@@ -325,14 +347,9 @@
                     </a>
                   </h4>
                   <h2 class="heading">
-                    <a href="https://www.hurb.com/">
-                      Maior agência de turismo online do Brasil
-                    </a>
+                    <a id="huTitle" href="https://www.hurb.com/"></a>
                   </h2>
-                  <p>
-                    O Hotel Urbano hoje é a maior agência de turismo online do Brasil.
-                    Tendo uma venda a cada 3 segundos.
-                  </p>
+                  <p id="huDescription"></p>
                 </div>
               </div>
               <div
@@ -342,7 +359,7 @@
                 <a
                   href="https://veloe.com.br/"
                   class="image d-flex justify-content-center align-items-center"
-                  style="background-image: url('images/veloe.png');"
+                  style="background-image: url('images/veloe.png'); max-width: 367px;"
                   data-scrollax=" properties: { translateY: '-30%'}"
                 >
                   <div
@@ -356,14 +373,9 @@
                       <a href="https://veloe.com.br/">Veloe</a>
                   </h4>
                   <h2 class="heading">
-                    <a href="https://veloe.com.br/">
-                      Use o seu tempo com o que realmente importa.
-                    </a>
+                    <a id="veloeTitle" href="https://veloe.com.br/"></a>
                   </h2>
-                  <p>
-                    Nova experiência de pagamento para pedágio, estacionamento,
-                    shoppings
-                  </p>
+                  <p id="veloeDescription"></p>
                 </div>
               </div>
               <div
@@ -384,19 +396,12 @@
                 </a>
                 <div class="text order-1">
                   <h4 class="subheading">
-                    <a href="https://popularenlinea.com/Paginas/home.aspx">
-                      Banco Popular Dominicano | Popularenlinea
-                    </a>
+                    <a href="https://popularenlinea.com/Paginas/home.aspx">Banco Popular Dominicano | Popularenlinea</a>
                   </h4>
                   <h2 class="heading">
-                    <a href="https://popularenlinea.com/Paginas/home.aspx">
-                      Redesenho do internet banking.
-                    </a>
+                    <a id="bpdTitle" href="https://popularenlinea.com/Paginas/home.aspx"></a>
                   </h2>
-                  <p>
-                    Um dos maiores bancos da américa latina, participei do
-                    projeto de todo o redesenho do internet banking.
-                  </p>
+                  <p id="bpdDescription"></p>
                 </div>
               </div>
               <div
@@ -406,7 +411,7 @@
                 <a
                   href="https://www.gotilt.com.br/"
                   class="image d-flex justify-content-center align-items-center"
-                  style="background-image: url('images/tiltapp.png');"
+                  style="background-image: url('images/tiltapp.png'); max-width: 367px;"
                   data-scrollax=" properties: { translateY: '-30%'}"
                 >
                   <div
@@ -417,19 +422,12 @@
                 </a>
                 <div class="text">
                   <h4 class="subheading">
-                    <a href="https://www.gotilt.com.br/">
-                      Tilt
-                    </a>
+                    <a href="https://www.gotilt.com.br/">TILT</a>
                   </h4>
                   <h2 class="heading">
-                    <a href="https://www.gotilt.com.br/">
-                      Clube de benefícios para viajantes frequentes
-                    </a>
+                    <a id="tiltTitle" href="https://www.gotilt.com.br/"></a>
                   </h2>
-                  <p>
-                    Startup do grupo Hotel Urbano voltado para viajantes
-                    frequentes.
-                  </p>
+                  <p id="tiltDescription"></p>
                 </div>
               </div>
             </div>
@@ -441,7 +439,7 @@
               <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Clientes</span>
+                    <span id="clientsTitle" class="ftco-label"></span>
                     <strong class="number" data-number="23">0</strong>
                   </div>
                 </div>
@@ -451,7 +449,7 @@
               <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Projetos entregues</span>
+                    <span id="projectsTitle" class="ftco-label"></span>
                     <strong class="number" data-number="33">0</strong>
                   </div>
                 </div>
@@ -461,7 +459,7 @@
               <div class="col-md-5 counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <span class="ftco-label">Copos de café</span>
+                    <span id="coffeTitle" class="ftco-label"></span>
                     <strong class="number" data-number="949">0</strong>
                   </div>
                 </div>
@@ -471,6 +469,7 @@
         </section>
         <footer class="ftco-footer ftco-bg-dark ftco-section">
           <div class="container">
+            <h1 id="text"></h1>
             <div class="row mb-5 justify-content-center">
               <div class="col-md-5 text-center">
                 <div class="ftco-footer-widget mb-5">
@@ -504,7 +503,7 @@
                   </ul>
                 </div>
                 <div class="ftco-footer-widget">
-                  <h2 class="mb-3">Contato</h2>
+                  <h2 id="contact" class="mb-3"></h2>
                   <p class="h3 email">
                     <a href="mailto:laforetmoreno@gmail.com"
                       >laforetmoreno@gmail.com</a
@@ -520,6 +519,10 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="languageButtons">
+            <button class="btnLg" id="en" onclick="changeLanguage('en')">EN</button>
+            <button class="btnLg" id="pt" onclick="changeLanguage('pt')">PT</button>
           </div>
         </footer>
         <div id="ftco-loader" class="show fullscreen">
@@ -562,5 +565,46 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="data/texts.js"></script>
+    <script>
+      console.log(data)
+
+      function changeLanguage(params = 'pt') {
+        console.log(params)
+        const language = params === 'en' ? [1] : [0];
+
+        const btnPt = document.getElementById('pt')
+        const btnEn = document.getElementById('en')
+
+        if (params === 'pt') {
+          btnPt.classList.add('checkedLanguage')
+          btnEn.classList.remove('checkedLanguage')
+        } else {
+          btnPt.classList.remove('checkedLanguage')
+          btnEn.classList.add('checkedLanguage')
+        }
+
+        const aboutTitle = document.getElementById('aboutTitle').innerHTML = data[language].aboutTitle;
+        const aboutDescription = document.getElementById('aboutDescription').innerHTML = data[language].aboutDescription;
+        const socialMidiasTitle = document.getElementById('socialMidiasTitle').innerHTML = data[language].socialMidiasTitle;
+        const contactTitleAbout = document.getElementById('contactTitleAbout').innerHTML = data[language].contactTitleAbout;
+        const phone = document.getElementById('phone').innerHTML = data[language].phone;
+        const hugeDescription = document.getElementById('hugeDescription').innerHTML = data[language].hugeDescription;
+        const flieberDescription = document.getElementById('flieberDescription').innerHTML = data[language].flieberDescription;
+        const huTitle = document.getElementById('huTitle').innerHTML = data[language]. huTitle;
+        const huDescription = document.getElementById('huDescription').innerHTML = data[language].huDescription;
+        const veloeTitle = document.getElementById('veloeTitle').innerHTML = data[language].veloeTitle;
+        const veloeDescription = document.getElementById('veloeDescription').innerHTML = data[language].veloeDescription
+        const bpdTitle = document.getElementById('bpdTitle').innerHTML = data[language].bpdTitle;
+        const bpdDescription = document.getElementById('bpdDescription').innerHTML = data[language].bpdDescription
+        const tiltTitle = document.getElementById('tiltTitle').innerHTML = data[language].tiltTitle;
+        const tiltDescription = document.getElementById('tiltDescription').innerHTML = data[language].tiltDescription;
+        const clientsTitle = document.getElementById('clientsTitle').innerHTML = data[language].clientsTitle;
+        const projectsTitle = document.getElementById('projectsTitle').innerHTML = data[language].projectsTitle
+        const coffeTitle = document.getElementById('coffeTitle').innerHTML = data[language].coffeTitle
+        const contact = document.getElementById('contact').innerHTML = data[language].contact;
+      }
+      changeLanguage()
+      </script>
   </body>
 </html>

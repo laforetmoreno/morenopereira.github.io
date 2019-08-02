@@ -6286,7 +6286,14 @@ button.bg-dark:focus {
   padding-left: 1.5rem !important; }
 
 .p-5 {
-  padding: 3rem !important; }
+  padding: 3rem !important; 
+}
+
+@media (max-width: 1024px) {
+  .p-5 {
+    padding: 2rem !important; 
+  }
+}
 
 .pt-5,
 .py-5 {
@@ -8066,7 +8073,16 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden; 
+}
+
+@media (min-width: 1200px) {
+    .ftco-animate .text {
+      min-height: 96px;
+      min-height: 465px;
+      max-height: 465px;
+    }
+  }
 
 .bg-primary {
   background: #2f89fc !important; }
@@ -8153,6 +8169,50 @@ textarea.form-control {
   display: block;
   border-radius: 50%;
   position: relative;
+}
+
+.languageButtons {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  outline:none;
+}
+
+@media (max-width: 991.98px) {
+  .languageButtons {
+    bottom: 25px;
+    right: 25px;
+  } 
+}
+
+.checkedLanguage {
+  background: #2f89fc !important;
+}
+
+#hugeDescription, #huDescription, #veloeDescription, #bpdDescription, #tiltDescription {
+  min-height: 96px
+}
+
+@media (max-width: 767px) {
+  #hugeDescription, #huDescription, #veloeDescription, #bpdDescription, #tiltDescription {
+    min-height: 196px
+  }
+}
+
+.btnLg {
+  background: #8c8c8c;
+  border-radius: 4px;
+  margin: 0 5px;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  display: block;
+  float: left;
+  border-radius: 50%;
+}
+
+.btnLg:focus {
+  outline:none;
 }
 
 .ftco-footer-social li {
