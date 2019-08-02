@@ -8211,6 +8211,14 @@ textarea.form-control {
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  #hugeDescription, #huDescription, #veloeDescription, #bpdDescription, #tiltDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .btnLg:focus {
   outline:none;
 }
