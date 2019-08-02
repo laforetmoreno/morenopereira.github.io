@@ -8171,15 +8171,15 @@ textarea.form-control {
   position: relative;
 }
 
-.languageButtons {
+.languageButtons, #languageButtons {
   position: fixed;
   bottom: 70px;
   right: 70px;
   outline:none;
 }
 
-@media (max-width: 991.98px) {
-  .languageButtons {
+@media (max-width: 767px) {
+  .languageButtons, #languageButtons {
     bottom: 25px;
     right: 25px;
   } 
