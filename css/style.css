@@ -8212,7 +8212,7 @@ textarea.form-control {
 }
 
 @media (max-width: 767px) {
-  #hugeDescription, #huDescription, #veloeDescription, #bpdDescription, #tiltDescription {
+  .btnLg {
     display: flex;
     align-items: center;
     justify-content: center;
