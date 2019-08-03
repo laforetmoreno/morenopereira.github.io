@@ -581,25 +581,31 @@
           btnEn.classList.add('checkedLanguage')
         }
 
-        const aboutTitle = document.getElementById('aboutTitle').innerHTML = data[language].aboutTitle;
-        const aboutDescription = document.getElementById('aboutDescription').innerHTML = data[language].aboutDescription;
-        const socialMidiasTitle = document.getElementById('socialMidiasTitle').innerHTML = data[language].socialMidiasTitle;
-        const contactTitleAbout = document.getElementById('contactTitleAbout').innerHTML = data[language].contactTitleAbout;
-        const phone = document.getElementById('phone').innerHTML = data[language].phone;
-        const hugeDescription = document.getElementById('hugeDescription').innerHTML = data[language].hugeDescription;
-        const flieberDescription = document.getElementById('flieberDescription').innerHTML = data[language].flieberDescription;
-        const huTitle = document.getElementById('huTitle').innerHTML = data[language]. huTitle;
-        const huDescription = document.getElementById('huDescription').innerHTML = data[language].huDescription;
-        const veloeTitle = document.getElementById('veloeTitle').innerHTML = data[language].veloeTitle;
-        const veloeDescription = document.getElementById('veloeDescription').innerHTML = data[language].veloeDescription
-        const bpdTitle = document.getElementById('bpdTitle').innerHTML = data[language].bpdTitle;
-        const bpdDescription = document.getElementById('bpdDescription').innerHTML = data[language].bpdDescription
-        const tiltTitle = document.getElementById('tiltTitle').innerHTML = data[language].tiltTitle;
-        const tiltDescription = document.getElementById('tiltDescription').innerHTML = data[language].tiltDescription;
-        const clientsTitle = document.getElementById('clientsTitle').innerHTML = data[language].clientsTitle;
-        const projectsTitle = document.getElementById('projectsTitle').innerHTML = data[language].projectsTitle
-        const coffeTitle = document.getElementById('coffeTitle').innerHTML = data[language].coffeTitle
-        const contact = document.getElementById('contact').innerHTML = data[language].contact;
+        const texts = [
+          'aboutTitle', 
+          'aboutDescription', 
+          'socialMidiasTitle',
+          'contactTitleAbout',
+          'phone',
+          'hugeDescription',
+          'flieberDescription',
+          'huTitle',
+          'huDescription',
+          'veloeTitle',
+          'veloeDescription',
+          'bpdTitle',
+          'bpdDescription',
+          'tiltTitle',
+          'tiltDescription',
+          'clientsTitle',
+          'projectsTitle',
+          'coffeTitle',
+          'contact'
+          ];
+
+        texts.map(text => {
+          document.getElementById([text]).innerHTML = data[language][text];
+        })
       }
       changeLanguage()
       </script>
